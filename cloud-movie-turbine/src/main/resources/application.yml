@@ -1,0 +1,16 @@
+server:
+  port: 5020
+eureka:
+  client:
+    service-url:
+      default-zone: http://server1:8761/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: cloud-movie-turbine
+turbine:
+  app-config: cloud-movie-user,cloud-movie-ticket
+  cluster-name-expression: "'default'"
+  combine-host-port: true   #解决偶发的聚合信息缺失问题
+

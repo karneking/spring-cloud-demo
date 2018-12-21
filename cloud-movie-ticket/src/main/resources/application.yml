@@ -1,0 +1,27 @@
+server:
+  port: 5011
+spring:
+  application:
+    name: cloud-movie-ticket
+eureka:
+  client:
+    service-url:
+      default-zone: http://server1:8761/eureka/
+  instance:
+  ###true 时，将服务的IP注册到服务，false时，将应用所在服务器的hostname注册到服务
+    prefer-ip-address: true
+### 修改属性，完成对Ribbon 负载规则修改
+### ! TIPS: 属性配置格式：<微服务虚机主机名>.ribbon.属性值 = value；此处主机名，大小写敏感
+CLOUD-MOVIE-USER:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+logging:
+  level:
+  ##### feign日志，只对debug级别的有响应
+    com.carney.movie.cloudmovieticket.service.UserService: debug
+
+#### feign 全局禁用hystrix
+#feign:
+#  hystrix:
+#    enabled: false
+

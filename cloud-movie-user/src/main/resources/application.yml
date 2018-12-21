@@ -1,0 +1,59 @@
+server:
+  port: 5001
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
+    show-sql: true
+#    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    platform: h2
+    #### 指定路径模式
+#    url: jdbc:h2:joe/test;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE
+### 内存模式,初始化时，3处地方涉及到账号密码
+    url: jdbc:h2:mem:test
+    username: admin
+    password: 123456
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    initialization-mode: always
+    schema-username: admin
+    schema-password: 123456
+    driver-class-name: org.h2.Driver
+    data-username: admin
+    data-password: 123456
+
+##### 服务注册相关配置 ####
+#### 应用名，用来服务发现
+  application:
+    name: cloud-movie-user
+  h2:
+    console:
+      enabled: true
+
+eureka:
+  client:
+    service-url:
+   ###服务注册中心地址
+      default-zone: http://admin:123456@server1:8761/eureka/
+  ### 开启服务的健康检查，此时会将健康状态传递给server
+    healthcheck:
+      enabled: true
+
+  instance:
+    prefer-ip-address: true
+  ### 手动指定注册的ip地址，极端情况下，此处涉及到多网卡情况下的注册地址选择
+#    ip-address: 127.0.0.1
+
+    #### 自定义元数据
+    metadata-map:
+      my-data: TEST
+
+logging:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: info
+    org.hibernate.type.descriptor.sql.BasicExtractor: info
+

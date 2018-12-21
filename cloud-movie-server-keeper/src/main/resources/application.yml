@@ -1,0 +1,21 @@
+#server:
+#  port: 8761
+#eureka:
+#  client:
+#    #### 是否向自己注册###
+#    register-with-eureka: false
+#    ###  是否搜索其他注册服务 ###
+#    fetch-registry: false
+#    #### 注册服务地址 ####
+#    service-url:
+#      defalut-zone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: cloud-movie-server-keeper
+  profiles:
+    active: first
+### 安全认证配置
+  security:
+    user:
+      name: admin
+      password: 123456

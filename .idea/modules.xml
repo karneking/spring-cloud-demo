@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-movie-gateway/cloud-movie-gateway.iml" filepath="$PROJECT_DIR$/cloud-movie-gateway/cloud-movie-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-movie-hystrix-dashboard/cloud-movie-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/cloud-movie-hystrix-dashboard/cloud-movie-hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-movie-server-keeper/cloud-movie-server-keeper.iml" filepath="$PROJECT_DIR$/cloud-movie-server-keeper/cloud-movie-server-keeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-movie-ticket/cloud-movie-ticket.iml" filepath="$PROJECT_DIR$/cloud-movie-ticket/cloud-movie-ticket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-movie-turbine/cloud-movie-turbine.iml" filepath="$PROJECT_DIR$/cloud-movie-turbine/cloud-movie-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-movie-upload/cloud-movie-upload.iml" filepath="$PROJECT_DIR$/cloud-movie-upload/cloud-movie-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-movie-user/cloud-movie-user.iml" filepath="$PROJECT_DIR$/cloud-movie-user/cloud-movie-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-demo.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-demo.iml" />
+    </modules>
+  </component>
+</project>

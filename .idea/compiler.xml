@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-movie-gateway" />
+        <module name="cloud-movie-hystrix-dashboard" />
+        <module name="cloud-movie-server-keeper" />
+        <module name="cloud-movie-ticket" />
+        <module name="cloud-movie-turbine" />
+        <module name="cloud-movie-upload" />
+        <module name="cloud-movie-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-movie-gateway" target="1.8" />
+      <module name="cloud-movie-hystrix-dashboard" target="1.8" />
+      <module name="cloud-movie-server-keeper" target="1.8" />
+      <module name="cloud-movie-ticket" target="1.8" />
+      <module name="cloud-movie-turbine" target="1.8" />
+      <module name="cloud-movie-upload" target="1.8" />
+      <module name="cloud-movie-user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

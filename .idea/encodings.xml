@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/cloud-movie-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-movie-hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-movie-server-keeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-movie-ticket" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-movie-turbine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-movie-upload" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-movie-user" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

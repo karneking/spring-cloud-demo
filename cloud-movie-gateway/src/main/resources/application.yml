@@ -1,0 +1,56 @@
+server:
+  port: 5050
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      default-zone: http://server1:8761/eureka/
+spring:
+  application:
+    name: cloud-movie-gateway
+
+#### 路由配置
+zuul:
+#### 忽略所有的服务，只路由下面配置的
+#  ignored-services: '*'
+#### 路由前缀
+  prefix: /api
+  #### 为true时，会从请求中移除前缀
+  strip-prefix: true
+  routes:
+  #### 自定义的路由名
+    ticket-routes:
+      path: /ticket/**
+      service-id: CLOUD-MOVIE-TICKET
+      ## 开启重试，需要到ribbon中配置重试次数
+      retryable: true
+      sensitive-headers: Cookie,Set-Cookie,Authorization   # 指定敏感header信息
+      ### 此处为false,请求路径会保留ticket
+#      strip-prefix: true
+##    可以指定路由到某个url
+#      url: http://localhost:5011/
+
+
+ribbon:
+  read-timeout: 2000
+  connect-timeout: 2000
+  max-auto-retries: 2
+  max-auto-retries-next-server: 1
+### 熔断超时配置
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeout-in-milliseconds: 4000
+            ribbon:
+              read-timeout: 4000
+              connect-timeout: 4000
+
+logging:
+  level:
+    com.netfix: debug

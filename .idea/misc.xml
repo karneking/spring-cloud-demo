@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/cloud-movie-user/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-movie-ticket/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-movie-server-keeper/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-movie-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-movie-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-movie-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-movie-upload/pom.xml" />
+      </list>
+    </option>
+  </component>
+</project>

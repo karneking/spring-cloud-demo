@@ -1,0 +1,18 @@
+server:
+  port: 5012
+spring:
+  application:
+    name: cloud-movie-upload
+  servlet:
+    multipart:
+      max-file-size: 2000Mb
+      max-request-size: 2500Mb
+eureka:
+  client:
+    service-url:
+      default-zone: http://server1:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+
+

@@ -1,0 +1,13 @@
+server:
+  port: 8761
+eureka:
+  server:
+  ####是否开启自我保护模式，推荐true
+    enable-self-preservation: false
+  instance:
+    hostname: server1
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defalut-zone: http://admin:123456@server1:8761/eureka/
